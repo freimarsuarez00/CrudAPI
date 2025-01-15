@@ -170,3 +170,4 @@ C:\Freimar\02-C#\.NET\CrudAPI\obj\Debug\net8.0\refint\CrudAPI.dll
 C:\Freimar\02-C#\.NET\CrudAPI\obj\Debug\net8.0\CrudAPI.pdb
 C:\Freimar\02-C#\.NET\CrudAPI\obj\Debug\net8.0\CrudAPI.genruntimeconfig.cache
 C:\Freimar\02-C#\.NET\CrudAPI\obj\Debug\net8.0\ref\CrudAPI.dll
+C:\Freimar\02-C#\.NET\CrudAPI\obj\Debug\net8.0\CrudAPI.sourcelink.json

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using CrudAPI.Context;
 using Microsoft.Extensions.Configuration;
+using CrudAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,8 +12,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"))
+    );
 
+builder.Services.AddScoped<PerfilServices>();
 
 
 var app = builder.Build();

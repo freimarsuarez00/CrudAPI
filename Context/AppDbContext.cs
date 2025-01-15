@@ -31,11 +31,11 @@ namespace CrudAPI.Context
 
             modelBuilder.Entity<Empleado>(tb =>
             {
-                tb.HasKey(col => col.idEmpleado);
-                tb.Property(col => col.idEmpleado).UseIdentityColumn().ValueGeneratedOnAdd();
+                tb.HasKey(col => col.IdEmpleado);
+                tb.Property(col => col.IdEmpleado).UseIdentityColumn().ValueGeneratedOnAdd();
                 tb.Property(col => col.NombreCompleto).HasMaxLength(50);
                 tb.HasOne(col => col.PerfilReferencia).WithMany(p => p.EmpleadosReferencia)
-                .HasForeignKey(col => col.idPerfil);
+                .HasForeignKey(col => col.IdPerfil);
                 tb.ToTable("Empleado");
 
             });
